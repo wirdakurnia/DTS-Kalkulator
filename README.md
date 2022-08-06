@@ -1,4 +1,4 @@
 # DTS-Kalkulator
 Project Kalkulator
-![1](https://user-images.githubusercontent.com/37255009/183241682-0246c2cb-3809-4247-b4ec-58c6ec16cfc6.png)
-![2](https://user-images.githubusercontent.com/37255009/183241686-ef7e4bc2-5153-40db-b823-ff5e4c061422.png)
+![Kalkulator1](https://user-images.githubusercontent.com/37255009/183242034-678e826a-91f5-4261-9649-0b415df6f777.png)
+![Kalkulator2](https://user-images.githubusercontent.com/37255009/183242037-ce3a74f5-00dc-4177-8462-1a2b320cc8e1.png)
