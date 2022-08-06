@@ -49,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnKali.setOnClickListener(view -> {
             if(TextUtils.isEmpty(inputAngka1.getText().toString().trim()) && TextUtils.isEmpty(inputAngka2.getText().toString().trim())){
                 validasi();
-            }else if(inputAngka2.getText().toString().trim().equals(0)){
-                Toast.makeText(this,"Tak Terhingga",Toast.LENGTH_LONG);
-            }
-            else{
+            }else{
                 getInputAngka();
                 hasil.setText(String.valueOf(hitung('*', angka1, angka2)));
             }
@@ -60,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
         btnBagi.setOnClickListener(view -> {
             if(TextUtils.isEmpty(inputAngka1.getText().toString().trim()) && TextUtils.isEmpty(inputAngka2.getText().toString().trim())){
                 validasi();
+            }else if(inputAngka2.getText().toString().trim().equals("0")){
+                Toast.makeText(this,"Tak Terhingga",Toast.LENGTH_LONG).show();
             }else{
                 getInputAngka();
                 hasil.setText(String.valueOf(hitung('/', angka1, angka2)));
@@ -77,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validasi(){
-        Toast.makeText(this, "Mohon masukkan Angka pertama & Kedua", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Mohon masukkan Angka pertama & kedua", Toast.LENGTH_LONG).show();
     }
 
     private double hitung(char operator, double angka1, double angka2){
